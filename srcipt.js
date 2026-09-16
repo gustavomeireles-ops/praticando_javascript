@@ -1,10 +1,10 @@
 // let nome = "Diogo";
 // let idade = 30;
 
-// // CONCATENAÇÃO
+// CONCATENAÇÃO
 // console.log("Nome: " + nome + ", idade: " + idade);
 
-// // INTERPOLAÇÃO
+// INTERPOLAÇÃO
 // console.log(`Nome: ${nome}, idade: ${idade}`);
 
 // console.log(typeof nome);
@@ -51,7 +51,7 @@
 // }
 
 
-// // ESTRUTURA DE REPETIÇÃO
+// ESTRUTURA DE REPETIÇÃO
 // let frutas = ["Maçã", "Banana", "Acerola", "Uva"];
 
 // console.log(frutas);
@@ -74,11 +74,11 @@
 //     return num * 2
 // })
 
-// // numerosDobrados = [2, 4, 6, 8]
+// numerosDobrados = [2, 4, 6, 8]
 // console.log(numerosDobrados);
 
-// // ou assim:
-// // Arrow function com retorno implícito
+// ou assim:
+// Arrow function com retorno implícito
 
 // let numerosDobradosArrow = numeros.map(num => num * 2);
 
@@ -90,7 +90,7 @@
 
 // let maioresQueDez = numeros.filter(num => num > 10);
 
-// // maioresQueDez = [15, 20]
+// maioresQueDez = [15, 20]
 // console.log(maioresQueDez);
 
 // REDUCE
@@ -98,9 +98,9 @@
 
 // let numeros = [1, 2, 3, 4]
 
-// // acumulador inicia em 0
-// // variavel auxiliar 
-// // acumulador começa em 0 e soma com o auxiliar até o último valor do array
+// acumulador inicia em 0
+// variavel auxiliar 
+// acumulador começa em 0 e soma com o auxiliar até o último valor do array
 
 // let soma = numeros.reduce((acumulador, auxiliar) => acumulador + auxiliar, 0);
 
@@ -121,10 +121,10 @@
 
 // console.log(item);
 
-// // DIFERENÇA ENTRE FILTER E FIND
-// // find -> retorna somente o primeiro elemento que ele encontra com a condição
-// // filter -> retorna todos os elementos que encontra com a condição
-// // arrow function  /  função lambda
+// DIFERENÇA ENTRE FILTER E FIND
+// find -> retorna somente o primeiro elemento que ele encontra com a condição
+// filter -> retorna todos os elementos que encontra com a condição
+// arrow function  /  função lambda
 // let itemFiltrado = produtos.filter(produto => produto.id === 2);
 
 // console.log(itemFiltrado);
@@ -179,8 +179,8 @@
 // let temPar = numeros.some(num => num % 2 === 0);
 // console.log(temPar); // true
 
-// //  EVERY
-// // Verifica se TODOS os elementos atendem a condição
+// EVERY
+// Verifica se TODOS os elementos atendem a condição
 
 // let todosPares = numeros.every(num => num % 2 === 0);
 // console.log(todosPares); // false

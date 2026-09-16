@@ -25,4 +25,13 @@ for (let i = 1; i <= N; i++) {
 
 console.log(`O resultado é da soma dos primeiros números até N dá: ${soma}`);
 
-//* 4° 
+// --- NÍVEL INTERMEDIÁRIO ---
+
+//* 1° Exibir números pares de 1 a 50
+
+for (let i = 1; i <= 50; i++) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+}
+
