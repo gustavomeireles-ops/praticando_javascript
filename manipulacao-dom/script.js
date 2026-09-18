@@ -26,16 +26,16 @@ elementos.forEach(elemento => {
 //* EVENTOS COM JS
 //* o que são eventos? R: Ações do usuário
 
-// Evento de click
-const botao = document.getElementById("btn");
+// // Evento de click
+// const botao = document.getElementById("btn");
 
-botao.addEventListener("click", () => {
-    alert("Você clicou! ;)");
-});
+// botao.addEventListener("click", () => {
+//     alert("Você clicou! ;)");
+// });
 
-// Evento de digitação (input/ keyup)
-const campo = document.getElementById("campo");
-const resultado = document.getElementById("resultado");
+// // Evento de digitação (input/ keyup)
+// const campo = document.getElementById("campo");
+// const resultado = document.getElementById("resultado");
 
 // INPUT
 // evento input -> dispara sempre que digita, em tempo real
@@ -50,33 +50,72 @@ const resultado = document.getElementById("resultado");
 // })
 
 // Evento de mouse
-const elemento = document.getElementById("troca-cor");
+// const elemento = document.getElementById("troca-cor");
 
-// mouseover -> quando o mouse passa em cima do elemento
-elemento.addEventListener("mouseover", () => {
-    elemento.style.backgroundColor = "#FF0000";
-}) 
+// // mouseover -> quando o mouse passa em cima do elemento
+// elemento.addEventListener("mouseover", () => {
+//     elemento.style.backgroundColor = "#FF0000";
+// }) 
 
-// mouseout -> quando o mouse sai de cima do elemento
-elemento.addEventListener("mouseout", () => {
-    elemento.style.backgroundColor = "#0000FF";
-}) 
+// // mouseout -> quando o mouse sai de cima do elemento
+// elemento.addEventListener("mouseout", () => {
+//     elemento.style.backgroundColor = "#0000FF";
+// }) 
 
-// mousemove
-// pega a posição do mouse
-document.addEventListener("mousemove", (evento) => {
-    console.log(`Posição X: ${evento.clientX}, Posição Y: ${evento.clientY}`);
-})
+// // mousemove
+// // pega a posição do mouse
+// document.addEventListener("mousemove", (evento) => {
+//     console.log(`Posição X: ${evento.clientX}, Posição Y: ${evento.clientY}`);
+// })
 
-// EVENTO DE FORMULÁRIO (submit)
+// // EVENTO DE FORMULÁRIO (submit)
 
-const form = document.querySelector("form") // pega direto pela tag form
+// const form = document.querySelector("form") // pega direto pela tag form
 
-// o comportamento padrão de formulário é recarregar a página ao enviar o submit
-form.addEventListener ("submit" , (e) => {
-    e.preventDefault();// preventDefault desabilita esse comportamento padrão
+// // o comportamento padrão de formulário é recarregar a página ao enviar o submit
+// form.addEventListener ("submit" , (e) => {
+//     e.preventDefault();// preventDefault desabilita esse comportamento padrão
 
-    const nome = document.getElementById("nome").value
-    console.log(`Nome: ${nome}`);
+//     const nome = document.getElementById("nome").value
+//     console.log(`Nome: ${nome}`);
     
+// })
+
+// // Criando elementos na página
+// const novo_elemento = document.createElement("p"); // cria o elemento p
+// novo_elemento.innerText = "Elemento novo criado.";
+
+// const form = document.getElementById("form");
+// // adicionando um elemento filho (p) dentro do pai (form)
+// form.appendChild(novo_elemento);
+
+
+// //criar botao 
+// const botao = document.createElement("button");
+// botao.innerText = "Excluir elemento";
+
+// form.appendChild(botao);
+
+// botao.addEventListener("click", (e) => {
+//     e.preventDefault();
+
+//     novoElemento.remove();
+
+//     //apagando direto do pai
+//     //form.removeChild
+// })
+
+// adcionando elementos em uma lista a partir de um input
+const input = document.getElementById("input");
+const botao = document.getElementById("add");
+const lista = document.getElementById("lista");
+
+botao.addEventListener("click", () => {
+    const valor_digitado = input.value
+    const li = document.createElement("li");
+    li.innerText = valor_digitado;
+
+    // colocando o filho (li) dentro do pai (ul)
+    lista.appendChild
 })
+
